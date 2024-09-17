@@ -14,6 +14,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/menu">Menu</RouterLink>
+        <RouterLink to="/cateringmeny">Cateringmeny</RouterLink>
+        <RouterLink to="/kontakt">Kontakt oss</RouterLink>
       </nav>
     </div>
   </header>
@@ -24,63 +26,75 @@ import HelloWorld from './components/HelloWorld.vue'
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Make the logo and nav stack vertically */
+  align-items: center;
+  background-color: transparent; /* Transparent background */
+  color: #E6E6E6;
+  font-family: 'Georgia', serif;
 }
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin-bottom: 2rem; /* Add space between logo and nav */
+  width: 250px;  /* Larger logo size */
+  height: 250px; /* Adjust to match width */
+}
+
+.wrapper {
+  text-align: center;
+  width: 100%; /* Full width for wrapper */
 }
 
 nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  display: flex;
+  flex-direction: column; /* Stack the navigation links vertically */
+  align-items: center;
+  margin-top: 1rem;
 }
 
 nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #FFA500; /* Gold-orange color for the links */
+  text-decoration: none;
+  font-size: 20px; /* Adjust font size */
+  margin-bottom: 0.5rem; /* Add spacing between each link */
 }
 
-nav a:first-of-type {
-  border: 0;
+nav a:hover {
+  color: #F4A100; /* Darker color on hover */
+  text-decoration: underline;
+}
+
+nav a.router-link-exact-active {
+  color: #FFFFFF; /* Active link is white */
+}
+
+.bunnTekst {
+  text-align: center;
+  color: #FFA500;
 }
 
 @media (min-width: 1024px) {
   header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    flex-direction: column;
+    align-items: center;
   }
 
   .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+    margin-bottom: 2rem; /* More spacing for larger screens */
+    width: 300px; /* Larger logo */
+    height: 300px;
   }
 
   nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
+    margin-top: 2rem;
+  }
 
-    padding: 1rem 0;
-    margin-top: 1rem;
+  nav a {
+    font-size: 22px; /* Larger font size for bigger screens */
   }
 }
 </style>

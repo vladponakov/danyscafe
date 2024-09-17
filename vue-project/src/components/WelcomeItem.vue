@@ -17,6 +17,8 @@
   margin-top: 2rem;
   display: flex;
   position: relative;
+  color: #E6E6E6; /* Light text color */
+  font-family: 'Georgia', serif; /* Classic serif font, same as Menu.vue */
 }
 
 .details {
@@ -28,16 +30,21 @@ i {
   display: flex;
   place-items: center;
   place-content: center;
-  width: 32px;
-  height: 32px;
-  color: var(--color-text);
+  width: 50px; /* Increased width for better visibility */
+  height: 50px; /* Increased height */
+  color: #FFA500; /* Gold-orange color for the icon */
 }
 
 h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 24px; /* Increase the size to match Menu.vue heading */
+  font-weight: normal; /* Regular weight to match the Menu.vue style */
   margin-bottom: 0.4rem;
-  color: var(--color-heading);
+  color: #f1f0ee; /* Gold color for the heading, same as in Menu.vue */
+}
+
+.details {
+  font-size: 22px; /* Matching the body text size from Menu.vue */
+  color: #FFA500; /* Gold-orange color for text */
 }
 
 @media (min-width: 1024px) {
@@ -50,16 +57,16 @@ h3 {
     top: calc(50% - 25px);
     left: -26px;
     position: absolute;
-    border: 1px solid var(--color-border);
-    background: var(--color-background);
-    border-radius: 8px;
+    background: transparent; /* No background, similar to Menu.vue */
+    border: none; /* Remove borders around the icon */
+    border-radius: 0; /* Remove border radius */
     width: 50px;
     height: 50px;
   }
 
   .item:before {
     content: ' ';
-    border-left: 1px solid var(--color-border);
+    border-left: 1px solid #D3D3D3; /* Light gray border */
     position: absolute;
     left: 0;
     bottom: calc(50% + 25px);
@@ -68,7 +75,7 @@ h3 {
 
   .item:after {
     content: ' ';
-    border-left: 1px solid var(--color-border);
+    border-left: 1px solid #D3D3D3; /* Light gray border */
     position: absolute;
     left: 0;
     top: calc(50% + 25px);
