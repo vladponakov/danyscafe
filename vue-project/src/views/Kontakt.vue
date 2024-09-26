@@ -4,8 +4,7 @@
       <h1>Kontakt oss</h1>
       <p class="sub-heading">Kontakt oss for reservasjoner eller spørsmål.</p>
       <ul class="contact-info">
-        <li>Email: <span>info@danyscafe.com</span></li>
-        <li>Telefon: <span>+47 123 45 678</span></li>
+        <li>Email: <span>danyscafeas@gmail.com</span></li>
       </ul>
     </div>
 
