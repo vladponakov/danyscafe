@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/danyscafe/vue-project/', // Add the base property for GitHub Pages
+  base: '/danyscafe/', // Add the base property for GitHub Pages
   plugins: [
     vue(),
   ],
