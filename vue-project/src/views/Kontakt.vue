@@ -2,7 +2,7 @@
   <div class="kontakt">
     <div class="section">
       <h1>Kontakt oss</h1>
-      <p class="sub-heading">Kontakt oss for reservasjoner eller spørsmål.</p>
+      <p class="sub-heading">Kontakt oss</p>
       <ul class="contact-info">
         <li>Email: <span>danyscafeas@gmail.com</span></li>
       </ul>
