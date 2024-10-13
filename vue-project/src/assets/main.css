@@ -1,16 +1,26 @@
 @import './base.css';
 
+body {
+  background-color: #1a1a1a; /* Dark background color */
+  color: #f0e68c; /* Light text color */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  background-color: #1a1a1a; /* Ensuring #app has the dark background */
+  color: #f0e68c; /* Light text color */
 }
 
 a,
 .green {
   text-decoration: none;
-  color: #db880b9d;
+  color: #db880b9d; /* Link color */
   transition: 0.4s;
   padding: 3px;
 }

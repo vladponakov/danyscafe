@@ -30,8 +30,8 @@ header {
   display: flex;
   flex-direction: column; /* Make the logo and nav stack vertically */
   align-items: center;
-  background-color: transparent; /* Transparent background */
-  color: #E6E6E6;
+  background-color: #1a1a1a; /* Dark background */
+  color: #f0e68c; /* Light text color */
   font-family: 'Georgia', serif;
 }
 
